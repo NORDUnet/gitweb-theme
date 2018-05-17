@@ -103,23 +103,19 @@ td, th {
 ---------------------------------------------------------------------------- */
 
 .page_header {
-  height: 50px;
-  line-height: 50px;
-  position: relative;
+  display: flex;
+  align-items: center;
   padding: 0 27px;
   margin-bottom: 20px;
   font-size: 20px;
   font-family: Helvetica, Arial, Freesans, Clean, sans-serif;
-  background: #FFFFFF; /* old browsers */
-  background: -moz-linear-gradient(top, #FFFFFF 0%, #F5F5F5 100%); /* firefox */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F5F5F5)); /* webkit */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F5F5F5',GradientType=0 ); /* ie */
-  background: -o-linear-gradient(top, #FFFFFF 0%, #F5F5F5 100%);
+  background: #1baad7;
   border-bottom: 1px solid #dfdfdf;
+  color: #FFFFFF;
 }
 
 .page_header a:link, .page_header a:visited {
-  color: #4183C4;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 3px;
   font-weight: bold;
@@ -137,8 +133,10 @@ td, th {
 
 .page_header img.logo {
   position: relative;
-  top: 7px;
+  top: 4px;
   margin-right: 5px;
+  width: 152px;
+  height: 38px;
 }
 
 /* Page Footer
@@ -280,7 +278,8 @@ th .header {
 
 .projsearch {
   position: absolute;
-  right: 4%;
+  color: #FFFFFF;
+  right: 80px;
   top: 15px;
 }
 
@@ -740,7 +739,7 @@ td.pre, div.pre, div.diff {
 
 .num    { color:#6ecf36; }
 .esc    { color:#ff00ff; }
-.str    { color:#ff00d3; background-color: #edc9ec }
+.str    { color:#ff00d3; }
 .dstr   { color:#818100; }
 .slc    { color:#838183; font-style:italic; }
 .com    { color:#838183; font-style:italic; }
@@ -751,4 +750,13 @@ td.pre, div.pre, div.diff {
 .kwb    { color:#6b3099; }
 .kwc    { color:#d4663d; }
 .kwd    { color:#2928ff; }
+
+/* login button */
+a.login {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: #FFFFFF;
+}
 
